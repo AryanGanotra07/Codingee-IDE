@@ -1,4 +1,4 @@
-# Judge0 IDE
+<!-- # Judge0 IDE
 [![Judge0 IDE Screenshot](https://github.com/judge0/ide/blob/master/.github/screenshot.png?raw=true)](https://ide.judge0.com/?7U55)
 
 [![License](https://img.shields.io/github/license/judge0/ide?color=2185d0&style=flat-square)](https://github.com/judge0/ide/blob/master/LICENSE)
@@ -41,4 +41,4 @@ Thanks a lot to all my [Patrons](https://www.patreon.com/hermanzdosilovic) and [
 Your are more than welcome to support Judge0 development on [Patreon](https://www.patreon.com/hermanzdosilovic), via [PayPal](https://paypal.me/hermanzdosilovic) or [Revolut](https://pay.revolut.com/profile/hermancy5).
 
 ## License
-Judge0 IDE is licensed under the [MIT License](https://github.com/judge0/ide/blob/master/LICENSE).
+Judge0 IDE is licensed under the [MIT License](https://github.com/judge0/ide/blob/master/LICENSE). -->
