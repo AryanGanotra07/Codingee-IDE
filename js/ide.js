@@ -145,43 +145,43 @@ function localStorageGetItem(key) {
   }
 }
 
-function showMessages() {
-    var width = $updates.offset().left - parseFloat($updates.css("padding-left")) -
-                $navigationMessage.parent().offset().left - parseFloat($navigationMessage.parent().css("padding-left")) - 5;
+// function showMessages() {
+//     var width = $updates.offset().left - parseFloat($updates.css("padding-left")) -
+//                 $navigationMessage.parent().offset().left - parseFloat($navigationMessage.parent().css("padding-left")) - 5;
 
-    if (width < 200 || messagesData === undefined) {
-        return;
-    }
+//     if (width < 200 || messagesData === undefined) {
+//         return;
+//     }
 
-    var messages = messagesData["messages"];
+//     var messages = messagesData["messages"];
 
-    $navigationMessage.css("animation-duration", messagesData["duration"]);
-    $navigationMessage.parent().width(width - 5);
+//     $navigationMessage.css("animation-duration", messagesData["duration"]);
+//     $navigationMessage.parent().width(width - 5);
 
-    var combinedMessage = "";
-    for (var i = 0; i < messages.length; ++i) {
-        combinedMessage += `${messages[i]}`;
-        if (i != messages.length - 1) {
-            combinedMessage += "&nbsp".repeat(Math.min(200, messages[i].length));
-        }
-    }
+//     var combinedMessage = "";
+//     for (var i = 0; i < messages.length; ++i) {
+//         combinedMessage += `${messages[i]}`;
+//         if (i != messages.length - 1) {
+//             combinedMessage += "&nbsp".repeat(Math.min(200, messages[i].length));
+//         }
+//     }
 
-    $navigationMessage.html(combinedMessage);
-}
+//     $navigationMessage.html(combinedMessage);
+// }
 
-function loadMessages() {
-    $.ajax({
-        url: `https://minio.judge0.com/public/ide/messages.json?${Date.now()}`,
-        type: "GET",
-        headers: {
-            "Accept": "application/json"
-        },
-        success: function (data, textStatus, jqXHR) {
-            messagesData = data;
-            showMessages();
-        }
-    });
-}
+// function loadMessages() {
+//     $.ajax({
+//         url: `https://minio.judge0.com/public/ide/messages.json?${Date.now()}`,
+//         type: "GET",
+//         headers: {
+//             "Accept": "application/json"
+//         },
+//         success: function (data, textStatus, jqXHR) {
+//             messagesData = data;
+//             showMessages();
+//         }
+//     });
+// }
 
 function showError(title, content) {
     $("#site-modal #title").html(title);
@@ -546,7 +546,7 @@ function updateScreenElements() {
 $(window).resize(function() {
     layout.updateSize();
     updateScreenElements();
-    showMessages();
+    // showMessages();
 });
 
 $(document).ready(function () {
@@ -643,7 +643,7 @@ $(document).ready(function () {
         $(this).closest(".message").transition("fade");
     });
 
-    loadMessages();
+    // loadMessages();
 
     require(["vs/editor/editor.main", "monaco-vim", "monaco-emacs"], function (ignorable, MVim, MEmacs) {
         layout = new GoldenLayout(layoutConfig, $("#site-content"));
