@@ -1,7 +1,7 @@
 // RapidAPI Configuration (https://rapidapi.com/hermanzdosilovic/api/judge0)
 var apiUrl = "https://judge0.p.rapidapi.com";
 var apiAuth = {
-    "x-rapidapi-key": "bd8f106f00msh34b47d0c95907d2p1eb977jsn974f1ae9555f",
+    "x-rapidapi-key": process.env.API_KEY,
 	"x-rapidapi-host": "judge0.p.rapidapi.com",
 	"useQueryString": true
 };
