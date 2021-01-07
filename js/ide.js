@@ -1,8 +1,8 @@
 // RapidAPI Configuration (https://rapidapi.com/hermanzdosilovic/api/judge0)
 var apiUrl = "https://judge0.p.rapidapi.com";
 var apiAuth = {
-    "x-rapidapi-key": process.env.API_KEY,
-	"x-rapidapi-host": "judge0.p.rapidapi.com",
+    "x-rapidapi-key": "d47e278ef9msh10d0b0bbce36a3bp1518dbjsn07f4cb72a951",
+	"x-rapidapi-host": "judge0-ce.p.rapidapi.com",
 	"useQueryString": true
 };
 var wait = localStorageGetItem("wait") || false;
